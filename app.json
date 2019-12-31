@@ -3,13 +3,13 @@
     "pages/index/index",
     "pages/logs/logs"
 
-    
+
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#C62F2F",
+    "navigationBarTitleText": "云音乐",
+    "navigationBarTextStyle": "white"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

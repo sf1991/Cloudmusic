@@ -1,16 +1,39 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
-
+const app = getApp();
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
+    inputShowed: false,
+    inputVal: "11"
   },
-  //事件处理函数
- 
+
+
+
+  go_search: function () {
    
-  
-})
+    wx.navigateTo({
+      url: '../search/search',
+      
+    });
+  },
+
+  showInput: function () {
+    this.setData({
+      inputShowed: true
+    });
+  },
+  hideInput: function () {
+    this.setData({
+      inputVal: "",
+      inputShowed: false
+    });
+  },
+  clearInput: function () {
+    this.setData({
+      inputVal: ""
+    });
+  },
+  inputTyping: function (e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
+  }
+});

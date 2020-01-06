@@ -1,5 +1,3 @@
-/**index.wxss**/
-
 .weui-search-bar {
   background-color: #d92c1e;
   border: 1px solid #d92c1e;
@@ -8,8 +6,7 @@
   background: none;
 }
 .weui-search-bar__label {
-  position: relative;
-  display: block;
+
   background: #DE655C;
   border: 0px solid #DE655C;
   border-radius: 16px;

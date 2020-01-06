@@ -17,7 +17,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.10.0",
 	"appid": "wxf5f922180c949490",
-	"projectname": "Cloudmusic",
+	"projectname": "miniprogram-2",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

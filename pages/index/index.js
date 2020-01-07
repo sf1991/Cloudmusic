@@ -8,10 +8,9 @@ Page({
 
 
   go_search: function () {
-   
+    console.log(1)
     wx.navigateTo({
-      url: '../search/search',
-      
+      url: 'pages/search/search',
     });
   },
 

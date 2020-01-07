@@ -1,0 +1,30 @@
+/**index.wxss**/
+
+.weui-search-bar {
+  background-color: #c62f2f;
+}
+
+.weui-search-bar__form {
+  border-radius: 16px;
+  background: #a82828;
+  overflow: hidden;
+}
+
+.weui-search-bar__label {
+  position: relative;
+  display: block;
+  background: #a82828;
+}
+
+.weui-search-bar__text, .weui-icon-search, ui-search-bar__input {
+  color: #c77373;
+}
+
+.weui-search-bar__cancel-btn {
+  color: #fff;
+}
+
+.weui-search-bar__input {
+  color: #fff;
+  caret-color: #fff;
+}

@@ -1,12 +1,28 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/user/user"
   ],
+  "tabBar": {
+    "color": "#8D8D8D",
+    "selectedColor": "#DC4238",
+    "backgroundColor": "#f6f6f8",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "账号"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#D92C1E",
+    "navigationBarBackgroundColor": "#C62F2F",
     "navigationBarTitleText": "云音乐",
     "navigationBarTextStyle": "white"
   },

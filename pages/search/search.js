@@ -1,4 +1,7 @@
 const API = require('../../api/api');
+const {
+  getHotList
+} = require('../../api/search');
 Page({
 
   /**
@@ -18,7 +21,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    getHotList().then(res => {
+      console.log(res)
+      wx.hideLoading()
+      // 大厂API接口的维定 code 0 没有问题
+      if (res.code === 200) { //严谨
+        this.setData({
+          hotsongs: res.result.hots
+        })
+      }
+    })
   },
 
   searchSuggest() {

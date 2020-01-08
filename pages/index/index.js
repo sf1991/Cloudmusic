@@ -1,4 +1,5 @@
 const app = getApp();
+
 Page({
   data: {
     inputShowed: false,
@@ -7,31 +8,30 @@ Page({
 
 
 
-  go_search: function () {
-    console.log(1)
+  go_search: function() {
     wx.navigateTo({
       url: '../search/search',
     });
- 
+
   },
 
-  showInput: function () {
+  showInput: function() {
     this.setData({
       inputShowed: true
     });
   },
-  hideInput: function () {
+  hideInput: function() {
     this.setData({
       inputVal: "",
       inputShowed: false
     });
   },
-  clearInput: function () {
+  clearInput: function() {
     this.setData({
       inputVal: ""
     });
   },
-  inputTyping: function (e) {
+  inputTyping: function(e) {
     this.setData({
       inputVal: e.detail.value
     });

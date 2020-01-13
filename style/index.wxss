@@ -1,12 +1,12 @@
 /**index.wxss**/
 
 .weui-search-bar {
-  background-color: #c62f2f;
+  background-color: #EA353A;
 }
 
 .weui-search-bar__form {
   border-radius: 16px;
-  background: #a82828;
+  background: #A82828;
   overflow: hidden;
 }
 

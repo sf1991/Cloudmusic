@@ -1,5 +1,5 @@
 <!--pages/search/search.wxml-->
-<view class="searchPage">
+<view class="searchPage page">
 
   <!-- 搜索框 -->
   <view class="weui-search-bar">

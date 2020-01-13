@@ -24,7 +24,6 @@ Page({
     getHotList().then(res => {
       console.log(res)
       wx.hideLoading()
-      // 大厂API接口的维定 code 0 没有问题
       if (res.code === 200) { //严谨
         this.setData({
           hotsongs: res.result.hots

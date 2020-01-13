@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/search/search",
+    "pages/index/index",
     "pages/user/user"
   ],
   "tabBar": {
     "color": "#8D8D8D",
-    "selectedColor": "#DC4238",
+    "selectedColor": "#EA353A",
     "backgroundColor": "#f6f6f8",
     "borderStyle": "black",
     "list": [
@@ -21,10 +21,9 @@
     ]
   },
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#C62F2F",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "云音乐",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

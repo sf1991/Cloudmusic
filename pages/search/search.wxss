@@ -1,27 +1,64 @@
-.search_suggest{
-  width:100%;
-  height:100%;
-
+.search_suggest {
+  width: 100%;
+  height: 100%;
 }
-.search_result{
+
+.search_result {
   display: block;
   font-size: 14px;
-  color: #000000;
-  /* background-color: #EDEEF0; */
-  /* border-radius: 15rpx; */
+  color: #000;
+  /* background-color: #EDEEF0; *//* border-radius: 15rpx; */
   padding: 15rpx;
   margin: 15rpx;
-  border-bottom: 1px solid #EDEEF0;
+  border-bottom: 1px solid #edeef0;
 }
-.hot_key_box{
+
+.hot-search {
+  margin-top: 70rpx;
+}
+
+.hot-search .title {
+  font-weight: bold;
+  font-size: 26rpx;
+}
+
+.hot-search .list {
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+  padding-right: 30rpx
+}
+
+.hot-search .list .index {
+  font-size: 28rpx;
+   width: 50rpx;
+}
+
+.hot-search .list .text{
+flex-grow:1
+}
+.hot-search .list .text .keyword {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.hot-search .list .text .content {
+  width: 100%;
+  color: #999;
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.hot-search .list .score {
+  color: #cbcbcb;
+  font-size: 24rpx;
+  width: 200rpx;
+  text-align: right
+}
+
+.hot_keys_box_item {
   display: flex;
   flex-flow: row wrap;
-}
-.hot_keys_box_item{
-  font-size: 14px;
-  color: #DE655C;
-  background-color: #EDEEF0;
-  border-radius: 15rpx;
-  padding: 15rpx;
-  margin: 10rpx;
 }

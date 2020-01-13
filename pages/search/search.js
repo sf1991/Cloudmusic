@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    hotsongs: [],//获取热门搜索
+    hotSearch: [],//获取热门搜索
     inputValue: null,//输入框输入的值
     history: [], //搜索历史存放数组
     searchsuggest: [], //搜索建议
@@ -22,11 +22,11 @@ Page({
    */
   onLoad: function(options) {
     getHotList().then(res => {
-      console.log(res)
-      wx.hideLoading()
+      console.log(res.data)
+    
       if (res.code === 200) { //严谨
         this.setData({
-          hotsongs: res.result.hots
+          hotSearch: res.data
         })
       }
     })

@@ -28,12 +28,23 @@
   </view>
 
   <!-- 热搜榜 -->
-  <view class="{{showView?'hot_keys':'header_view_hide'}}">
+  <view class="hot-search">
     <view class="title">热搜榜</view>
-    <view class='hot_key_box'>
-      <view wx:for="{{hotsongs}}" wx:key="">
-        <view class='hot_keys_box_item' data-value='{{item.first}}' bindtap='fill_value'>{{item.first}}</view>
-      </view>
+    <view class='list' wx:for="{{hotSearch}}" wx:key="">
+      <view class='index'>
+          {{index+1}}
+        </view>
+        <view class='text'>
+          <view class='keyword'>
+            {{item.searchWord}}
+          </view>
+          <view class='content'>
+            {{item.content}}
+          </view>
+        </view>
+        <view class='score'>
+          {{item.score}}
+        </view>
     </view>
   </view>
 

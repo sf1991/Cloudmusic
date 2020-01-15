@@ -26,20 +26,29 @@
   display: flex;
   align-items: center;
   padding-left: 30rpx;
-  padding-right: 30rpx
+  padding-right: 30rpx;
 }
 
 .hot-search .list .index {
   font-size: 28rpx;
-   width: 50rpx;
+  width: 50rpx;
 }
 
-.hot-search .list .text{
-flex-grow:1
+.hot-search .list .text {
+  flex-grow: 1;
 }
+
 .hot-search .list .text .keyword {
   font-size: 30rpx;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.hot-search .list .text .icon {
+  margin-left: 10rpx;
+  height: 30rpx;
+  width: 50rpx;
 }
 
 .hot-search .list .text .content {
@@ -48,14 +57,14 @@ flex-grow:1
   font-size: 24rpx;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
 }
 
 .hot-search .list .score {
   color: #cbcbcb;
   font-size: 24rpx;
   width: 200rpx;
-  text-align: right
+  text-align: right;
 }
 
 .hot_keys_box_item {

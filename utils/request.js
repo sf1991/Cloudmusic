@@ -1,5 +1,6 @@
 //封装request请求
-const API_BASE_URL = 'http://192.168.31.190:3000';
+// const API_BASE_URL = 'http://192.168.31.190:3000';
+const API_BASE_URL = 'http://192.168.1.96:3000';
 const request = (url, data) => {
   let _url = API_BASE_URL + url;
   return new Promise((resolve, reject) => {

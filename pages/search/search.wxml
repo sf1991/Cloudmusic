@@ -32,19 +32,20 @@
     <view class="title">热搜榜</view>
     <view class='list' wx:for="{{hotSearch}}" wx:key="">
       <view class='index'>
-          {{index+1}}
+        {{index+1}}
+      </view>
+      <view class='text'>
+        <view class='keyword'>
+          <view>{{item.searchWord}}</view>
+          <image wx:if="{{item.iconUrl}}" src='{{item.iconUrl}}' class='icon' mode='aspectFit'></image>
         </view>
-        <view class='text'>
-          <view class='keyword'>
-            {{item.searchWord}}
-          </view>
-          <view class='content'>
-            {{item.content}}
-          </view>
+        <view class='content'>
+          {{item.content}}
         </view>
-        <view class='score'>
-          {{item.score}}
-        </view>
+      </view>
+      <view class='score'>
+        {{item.score}}
+      </view>
     </view>
   </view>
 

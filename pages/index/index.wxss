@@ -1,2 +1,10 @@
 /**index.wxss**/
 
+.banner{
+  position:absolute;
+  top:0; left:0; right:0;
+  margin:auto;
+  width: 94%;
+  height: 90%;
+  border-radius: 15rpx;
+}

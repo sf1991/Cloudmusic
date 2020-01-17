@@ -1,22 +1,17 @@
 {
   "pages": [
-    "pages/search/search",
     "pages/index/index",
+    "pages/search/search",
     "pages/user/user"
   ],
   "tabBar": {
-    "color": "#8D8D8D",
-    "selectedColor": "#EA353A",
-    "backgroundColor": "#f6f6f8",
-    "borderStyle": "black",
+    "custom": true,
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "发现"
+        "pagePath": "pages/index/index"
       },
       {
-        "pagePath": "pages/user/user",
-        "text": "账号"
+        "pagePath": "pages/user/user"
       }
     ]
   },

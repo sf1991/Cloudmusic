@@ -10,3 +10,11 @@
     取消
   </view>
 </view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"indicator-active-color="#EA353A" circular="true">
+  <block wx:for="{{banner}}" wx:key="*this">
+    <swiper-item class="swiper_item" data-id="{{item.targetId}}" bindtap='handlePlayAudio'>
+      <!--点击之后获取到歌曲的ID存放到data-id -->
+      <image src='{{item.imageUrl}}' class='banner' />
+    </swiper-item>
+  </block>
+</swiper>
